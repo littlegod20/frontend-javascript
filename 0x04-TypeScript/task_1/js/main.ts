@@ -5,6 +5,7 @@ interface Teacher {
   yearsOfExperience?: number;
   location: string;
   contract?: boolean;
+  [key: string]: any;
 }
 
 const teacher1: Teacher = {
@@ -14,6 +15,7 @@ const teacher1: Teacher = {
   yearsOfExperience: 10,
   location: "New York",
   contract: false,
+  subject: "Math",
 };
 
 console.log(teacher1);
